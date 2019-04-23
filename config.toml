@@ -1,0 +1,5 @@
+baseURL = "https://2018yfb1004800.cn/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+
+theme = "introduction"

@@ -9,8 +9,17 @@ install:
   - go get github.com/gohugoio/hugo
 
 script:
+  - git submodule init
+  - git submodule update
+  - rm -rf public
+  - mkdir public
+  - git worktree prune
+  - rm -rf .git/worktrees/public/
+  - git worktree add -B gh-pages public origin/gh-pages
+  - rm -rf public/*
   - hugo
   - cd public/
+  - cp ../CNAME .
   - git add --all
   - git commit -m "add message"
   - git push origin gh-pages:gh-pages

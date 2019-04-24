@@ -51,7 +51,7 @@ theme = "hugo-theme-bootstrap4-blog"
   # Display post summaries instead of content in list templates (default: true)
   #truncate = true
 
-  # Disable the use of sub-resource integrity on CSS/JS assets (default: false)
+  #  Disable the use of sub-resource integrity on CSS/JS assets (default: true)
   # Useful if you're using a CDN or other host where you can't control cache headers
   #disable_sri = false
 
@@ -66,9 +66,9 @@ theme = "hugo-theme-bootstrap4-blog"
     # Optional, used for attribution in Twitter cards (ideally not a person
     # for example: nytimes, flickr, NatGeo, etc).
     # See: https://dev.twitter.com/cards/types/summary-large-image
-    twitter = "username"
+    #twitter = "username"
 
-# Default content language for Hugo 0.17's multilingual support (default is "en")
+# Default content language for Hugo 0.17's multilingual support (default is "zh-Hant-TW")
 # See: https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md
 #DefaultContentLanguage = "en"
 

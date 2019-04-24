@@ -1,47 +1,48 @@
 - id: about
-  translation: "About"
+  translation: "关于"
 
 - id: home
-  translation: "Home"
+  translation: "首页"
 
 - id: recentPosts
-  translation: "Recent Posts"
+  translation: "最近发表"
 
 - id: readMore
-  translation: "Read more →"
+  translation: "继续阅读 →"
 
 - id: translations
-  translation: "Translations"
+  translation: "翻译"
 
 - id: share
-  translation: "Share"
+  translation: "分享"
 
 - id: paginatorPrevious
-  translation: "Previous page"
+  translation: "上一页"
 
 - id: paginatorNext
-  translation: "Next page"
+  translation: "下一页"
 
 - id: cookieMessage
   translation: "This website uses cookies."
 
 - id: cookieLink
-  translation: "Learn more."
+  translation: "进一步了解。"
 
 - id: cookieDismiss
-  translation: "Got it!"
+  translation: "知道了!"
 
 - id: backToTop
-  translation: "Back to top"
+  translation: "回到首页"
 
 - id: links
-  translation: "Links"
+  translation: "链接"
 
 - id: authoredBy
-  translation: "by"
+  translation: "作者"
 
 - id: postedIn
   translation: "in"
 
 - id: comma
   translation: ","
+

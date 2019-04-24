@@ -11,11 +11,11 @@ install:
 script:
   - git submodule init
   - git submodule update
-  - git branch
   - rm -rf public
   - mkdir public
   - git worktree prune
   - rm -rf .git/worktrees/public/
+  - git branch gh-pages
   - git worktree add -B gh-pages public origin/gh-pages
   - rm -rf public/*
   - hugo

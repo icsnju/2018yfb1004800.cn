@@ -1,0 +1,25 @@
+sudo: false
+
+language: go
+
+git:
+  depth: 1
+
+install: 
+  - go get github.com/gohugoio/hugo
+
+script:
+  - hugo
+  - cd public/
+  - git add --all
+  - git commit -m "add message"
+  - git push origin gh-pages:gh-pages
+
+  # Deploy to GitHub pages
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: public
+  on:
+    branch: master

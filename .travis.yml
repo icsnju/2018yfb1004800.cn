@@ -16,7 +16,7 @@ script:
   - git worktree prune
   - rm -rf .git/worktrees/public/
   - git branch gh-pages
-  - git worktree add -B gh-pages public origin/gh-pages
+  - git worktree add -B gh-pages public ../gh-pages
   - rm -rf public/*
   - hugo
   - cd public/

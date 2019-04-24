@@ -11,13 +11,17 @@ install:
 script:
   - git submodule init
   - git submodule update
+  - git checkout --orphan gh-pages
+  - git reset --hard
+  - git commit --allow-empty -m "Initializing gh-pages branch"
+  - git push upstream gh-pages
+  - git checkout master
   - rm -rf public
   - mkdir public
   - git worktree prune
   - rm -rf .git/worktrees/public/
-  - git branch gh-pages
-  - git remote
   - git worktree add -B gh-pages public upstream/gh-pages
+  - git checkout master
   - rm -rf public/*
   - hugo
   - cd public/

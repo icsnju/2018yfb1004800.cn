@@ -8,10 +8,26 @@ git:
 install: 
   - go get github.com/gohugoio/hugo
 
-script:
+before_script:
   - git submodule init
   - git submodule update
+  - git checkout --orphan gh-pages
+  - git reset --hard
+  - git commit --allow-empty -m "Initializing gh-pages branch"
+  - git push upstream gh-pages
+  - git checkout master
+
+script:
+  - rm -rf public
+  - git worktree add -B gh-pages public origin/gh-pages
   - hugo
+  - cd public
+  - cp ../CNAME .
+  - git add --all
+  - git commit -m "Publishing to gh-pages" 
+  - cd ..
+  - git push origin gh-pages
+
   # Deploy to GitHub pages
 deploy:
   provider: pages

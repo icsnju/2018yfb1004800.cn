@@ -1,6 +1,6 @@
 ---
 date: 2014-03-10
-linktitle: Migrating from Jekyll
+linktitle: cy
 menu:
   main:
     parent: tutorials

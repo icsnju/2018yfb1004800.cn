@@ -1,7 +1,7 @@
 ---
 author: "北京大学软件工程研究所"
 date: 2019-04-24
-linktitle: 华中科技大学
+linktitle: meetings-2019-s1
 menu:
   main:
     parent: tutorials

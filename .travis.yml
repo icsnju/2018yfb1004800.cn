@@ -14,13 +14,11 @@ script:
   - git checkout --orphan gh-pages
   - git reset --hard
   - git commit --allow-empty -m "Initializing gh-pages branch"
-  - git push origin gh-pages
   - git checkout master
   - rm -rf public
   - mkdir public
   - git worktree prune
-  - rm -rf .git/worktrees/public/
-  - git worktree add -B gh-pages public origin/gh-pages
+  - rm -rf .git/worktrees/public/s
   - git checkout master
   - rm -rf public/*
   - hugo

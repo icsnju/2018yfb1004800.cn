@@ -20,4 +20,4 @@ weight: 10
 
 为了围绕人机物融合的云计算与大数据主题进行进一步的探讨，论坛还特别组织了专题研讨会。研讨会中，来自北京大学、清华大学等多家高校的师生共同梳理“人机物资源随需即用”的重大技术需求，讨论云、网、端软硬件及数据和服务资源多维可编程、动态可协同、按需可融合等重大科学问题与技术挑战。
 
-![avatar](http://qiniu-njuics.nemoworks.info/img/2018yfb1004800.cn/hzkjdx.jpeg)
+![avatar](http://cdn.njuics.cn/img/2018yfb1004800.cn/hzkjdx.jpeg)

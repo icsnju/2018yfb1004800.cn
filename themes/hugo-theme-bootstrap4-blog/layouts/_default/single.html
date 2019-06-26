@@ -61,7 +61,12 @@
     <h2 class="blog-post-title" dir="auto"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
     <p class="blog-post-meta"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time> {{ i18n "authoredBy" }} {{ .Params.author | default .Site.Params.author }}{{ if or (.Params.categories) (.Params.tags) }} {{ i18n "postedIn" }} {{ partial "meta-terms.html" . }}{{ end }}</p>
   </header>
+
   {{ .Content }}
+
+  <!-- {{ if eq ($.Param "title")  "人机物融合的云计算与大数据新技术论坛" }}
+  {{ partial "meeting.html" }}
+  {{ end }} -->
 
   {{ if .IsTranslated }}
   <h4>{{ i18n "translations" }}</h4>
@@ -78,7 +83,7 @@
   <hr>
   <footer>
 
-  {{ if (ne ($.Param "sharingicons") false) }}
+  {{ if ( ($.Param "sharingicons") false) }}
   {{ partial "sharing-icons.html" . }}
   {{ end }}
 
@@ -91,5 +96,6 @@
 </article> <!-- /.blog-post -->
 
 {{ end }}
+
 
 {{- /* vim: set ts=2 sw=2 et: */}}

@@ -1,0 +1,289 @@
+<!-- css files -->
+<link href="{{ .Site.BaseURL }}/css/materialize.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ .Site.BaseURL }}css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ .Site.BaseURL }}css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="{{ .Site.BaseURL }}css/timeline.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- /css files -->
+<style type="text/css">
+	.card-center {
+		width: 80%;
+		margin-left: auto; 
+		margin-right: auto;
+	}
+	.card-center .card-content {
+		min-height: 150px;
+	}
+</style>
+
+<section class="staff-agileinfo blue-grey lighten-5" id="guest">
+	<div class="container center-align">
+		<h3 class="text-center">嘉宾</h3>
+		<div class="row">
+	        <div class="col s12 m6 l3">
+		        <div class="card card-center">
+		            <div class="card-image">
+                        <!-- <img src="{{ .Site.BaseURL }}images/liuling_1.jpeg"> -->
+                        <!-- <img src="http://qiniu-njuics.nemoworks.info/img/2018yfb1004800.cn/liuling.jpeg"> -->
+                        <img src={{.Params.guestes.first.image}}>
+		            </div>
+		            <div class="card-content">
+                        <!-- <h4>Ling Liu</h4> -->
+                        <h4>{{.Params.guestes.first.name}}</h4>
+                        <br/>
+		              	<p class="grey-text text-darken-2">{{.Params.guestes.first.introduction}}</p>
+		              	<!-- <p class="grey-text text-darken-2">Georgia Institute of Technology教授，IEEE Fellow</p> -->
+		            </div>
+		        </div>
+	        </div>
+	        <div class="col s12 m6 l3">
+		        <div class="card card-center">
+		            <div class="card-image">
+                        <img src={{.Params.guestes.second.image}}>
+                        <!-- <img src= "http://qiniu-njuics.nemoworks.info/img/2018yfb1004800.cn/CaltonPu_1.jpeg"> -->
+		            </div>
+		            <div class="card-content">
+		            	<h4>{{.Params.guestes.second.name}}</h4>
+		            	<br/>
+		              	<p class="grey-text text-darken-2">{{.Params.guestes.second.introduction}}</p>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="col s12 m6 l3">
+		        <div class="card card-center">
+		            <div class="card-image">
+                    <!-- <img src="{{ .Site.BaseURL }}images/meiqiaozhu1.jpg"> -->
+                          <!-- <img src="http://qiniu-njuics.nemoworks.info/img/2018yfb1004800.cn/meiqiaozhu.jpg"> -->
+		              	<img src={{.Params.guestes.third.image}}>
+		            </div>
+		            <div class="card-content">
+		            	<h4>{{.Params.guestes.third.name}}</h4>
+		            	<br/>
+		              	<p class="grey-text text-darken-2">{{.Params.guestes.third.introduction}}</p>
+		            </div>
+		        </div>
+	        </div>
+            <div class="col s12 m6 l3">
+                <div class="card card-center">
+                    <div class="card-image">
+                        <!-- <img src="http://qiniu-njuics.nemoworks.info/img/2018yfb1004800.cn/huanggang.jpg"> -->
+                        <img src={{.Params.guestes.fourth.image}}>
+                        <!-- <img src="{{ .Site.BaseURL }}images/huanggang.jpg"> -->
+                    <div class="card-content">
+                        <h4>{{.Params.guestes.fourth.name}}</h4>
+                        <br/>
+                        <p class="grey-text text-darken-2">{{.Params.guestes.fourth.introduction}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+	</div>
+</section>
+
+
+<section class="staff-agileinfo" id="schedule">
+	<div class="container center-align">
+		<h3 class="text-center">日程安排</h3>
+
+		<div style="height: 10px"></div>
+		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-0 col-lg-5 col-lg-offset-0 left-align">
+            <ul class="timeline timeline-centered">
+                <li class="timeline-item period">
+                    <div class="timeline-info"></div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h2 class="timeline-title">6月13日</h2>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>09:00</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">开幕，领导致辞</h4>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>09:15</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">特邀报告：题目待定</h4>
+                        <p>Ling Liu </br>Georgia Institute of Technology教授 </br>IEEE Fellow</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>10:05</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">茶歇</h4>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>10:20</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">特邀报告：题目待定</h4>
+                        <p>Calton Pu </br>Georgia Institute of Technology教授 </br>IEEE Fellow</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>11:10</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">特邀报告：题目待定</h4>
+                        <p>Qiaozhu Mei </br>University of Michigan教授 </br>ACM杰出科学家</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>12:00</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">午餐</h4>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>13:30</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">闭门会议：人机物融合的云计算架构与平台项目交流会</h4>
+                        <p>黄罡，王继良，彭鑫，王洋，曹春</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>17:00</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 left-align">
+            <ul class="timeline timeline-centered">
+                <li class="timeline-item period">
+                    <div class="timeline-info"></div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h2 class="timeline-title">6月14日</h2>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>09:00</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">特邀报告：人机物融合的云计算</h4>
+                        <p>黄罡 </br>北京大学教授 </br>杰青</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>09:50</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">开放讨论</h4>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>10:20</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">茶歇</h4>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>10:40</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">Panel专题讨论</h4>
+                        <p>Ling Liu，Calton Pu，Qiaozhu Mei，黄罡</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>11:50</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">总结，闭幕</h4>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>12:00</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                    </div>
+                </li>
+            </ul>
+        </div>
+		<div class="clearfix"></div>
+	</div>
+</section>
+<section class="staff-agileinfo" id="schedule">
+        <!-- <div class="container center-align"> -->
+            <h3 class="text-center">会议注册</h3>
+            <div style="height: 10px"></div>
+<!-- <section class="service-w3l" id="about"> -->
+    <div class="container">
+        <div class="col-lg-7 col-md-12 col-sm-12">
+            <p class="serv-p1 center-align">
+                    <h4>1. 会议信息</h4></br>
+                        时间：2019年6月12—14日 </br>
+                        地点：兰州兰州大学 </br>
+                        主办：兰州大学 </br>
+                        协办：中国电子学会青年科学家俱乐部“云计算与大数据”专委会</br>
+                    </br>
+                    <h4>2. 缴费标准 </h4></br>
+                        1400元/人</br>
+                        </br>
+                    <h4>3. 付款方式</h4> </br>
+                        本次会议委托兰州元亨文化传播公司实施会务相关组织工作</br>
+                        <font color="red">请务必在附言注明：人机物&#43;单位名称&#43;姓名</font></br>
+                        1）支付宝、微信支付，扫描二维码，收款方：兰州元亨文化传播公司</br>
+                            <img src="{{ .Site.BaseURL }}images/pay.png"></br>
+                        2）银行转账汇款：</br> 
+                            开户名称：兰州元亨文化传播有限责任公司 </br>
+                            开户银行：中国工商银行兰州住房城建支行 </br>
+                            账 号：2703 0019 0920 0056 865.</br>
+                        3）邮局汇款 </br>
+                            地址：甘肃省兰州市城关区小稍门外280号昌运大厦135信箱兰州元亨文化传播有限责任公司 </br>
+                            收款人：史明陇 </br>
+                            邮编：730030</p><br/>
+                    <h4>4. 住宿信息</h4> </br>
+                        酒店：兰州飞天大酒店（甘肃省兰州市城关区天水南路529号）</br>
+                        <!-- <iframe src="http://www.google.cn/maps/embed?pb=!1m18!1m12!1m3!1d3225.7991471436812!2d103.85334131482237!3d36.049607480109934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x365a938fef0ba039%3A0xd5bf4882d07d0377!2z5YWw5bee6aOe5aSp5aSn6YWS5bqX!5e0!3m2!1szh-CN!2scn!4v1558698029805!5m2!1szh-CN!2scn" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                        路线：</br>1. 兰州中川机场，乘坐中川机场至城关区线路 ，  2站后东方大酒店(兰州大学)站 ，下车 ，  步行220米到达 </br>
+                             2. 兰州火车站1路/131路，至兰州大学站下车，步行260米到达</br>
+                            </br>
+                <font color="red">请下载附件填写参会回执并与注册缴费证明一并发送至指定邮箱： </font></br>
+                    邮箱地址：renjiwu18@163.com
+                    <a href="http://qiniu-njuics.nemoworks.info/file/2018yfb1004800.cn/inviting.pdf" download="inviting.pdf"></br>点击下载会议邀请函</a>
+                    <a href="http://qiniu-njuics.nemoworks.info/file/2018yfb1004800.cn/%E5%8F%82%E4%BC%9A%E5%9B%9E%E6%89%A7.docx" download="参会回执.docx"></br>点击下载参会回执并回复</a>
+        </div>
+    </div>
+</section>
+{{- /* vim: set ts=2 sw=2 et: */}}

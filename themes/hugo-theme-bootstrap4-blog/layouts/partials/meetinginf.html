@@ -1,0 +1,43 @@
+<!-- css files -->
+<!-- <link href="{{ .Site.BaseURL }}css/materialize.css" rel="stylesheet" type="text/css" media="all" /> -->
+ <link href="{{ .Site.BaseURL }}css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ .Site.BaseURL }}css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ .Site.BaseURL }}css0/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="{{ .Site.BaseURL }}css/timeline.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- /css files -->
+<style type="text/css">
+	.card-center {
+		width: 80%;
+		margin-left: auto; 
+		margin-right: auto;
+	}
+	.card-center .card-content {
+		min-height: 150px;
+	}
+</style>
+<aside class="col-sm-5 ml-auto blog-sidebar">
+    <section class="service-w3l" id="about">
+        <!-- <div class="container"> -->
+            <div class="col-md-12 col-sm-12">
+                <blockquote style="margin-left: 20px;">
+                    <h5>时间</h5>
+                    <h6 class="host">{{.Params.sidebar.meetingtime}}</h6>
+                    <!-- <h6 class="host">2019年6月12日 - 14日</h6> -->
+                    <h5>主办单位</h5>
+                    <h6 class="host">{{.Params.sidebar.organizer}}</h6>
+                    <!-- <h6 class="host">兰州大学</h6> -->
+                    <h5>协办单位</h5>
+                    <h6 class="host">{{.Params.sidebar.cosponsors}}</h6>
+                    <!-- <h6 class="host">中国电子学会青年科学家俱乐部“云计算与大数据”专委会</h6> -->
+                    <h5>论坛主席</h5>
+                    <h6 class="host">{{.Params.sidebar.chiefs.firstchief}} <p class="serv-p2">{{.Params.sidebar.chiefs.firstchieftitle}}</p></h6>
+                    <h6 class="host">{{.Params.sidebar.chiefs.secondchief}} <p class="serv-p2">{{.Params.sidebar.chiefs.secondchieftitle}}</p></h6>
+                    <!-- <h6 class="host">胡斌 <p class="serv-p2">教授</p></h6> -->
+                    <!-- <h6 class="host">刘譞哲 <p class="serv-p2">副教授</p></h6> -->
+                </blockquote>
+            <!-- </div> -->
+            <!-- <div class="clearfix"></div> -->
+        </div>
+    </section>
+  </aside><!-- /.blog-sidebar -->
+  {{- /* vim: set ts=2 sw=2 et: */}}

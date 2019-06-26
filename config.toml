@@ -21,7 +21,7 @@ theme = "hugo-theme-bootstrap4-blog"
   author = "Your Name"
 
   # Description/subtitle for homepage (can be Markdown)
-  description = "国家重点研发计划《人机物融合的云计算架构与平台》信息发布平台"
+  #description = "国家重点研发计划《人机物融合的云计算架构与平台》信息发布平台"
 
   # Show header (default: true)
   #header_visible = true

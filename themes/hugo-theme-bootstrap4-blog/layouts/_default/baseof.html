@@ -39,14 +39,14 @@
     {{ block "masthead" . }}
     <div class="blog-masthead">
       <div class="container">
-        <nav class="nav blog-nav">
+        <!-- <nav class="nav blog-nav"> -->
           <a class="nav-link {{ if .IsHome }}active{{ end }}" href="{{ .Site.BaseURL | absLangURL }}">{{ i18n "home" }}</a>
           {{- $currentPage := . -}}
           {{ range .Site.Menus.navbar }}
           {{ $menuURL := .URL | absLangURL }}
           <a class="nav-link{{ if or ($currentPage.IsMenuCurrent "navbar" .) ($currentPage.HasMenuCurrent "navbar" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
           {{ end }}
-        </nav>
+        <!-- </nav> -->
       </div>
     </div>
     {{ end }}
@@ -65,18 +65,28 @@
     {{ block "body" . }}
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 blog-main">
+        <div class="col-sm-7 blog-main">
 
           {{ block "main" . }}
           <!-- The part of the page that begins to differ between templates -->
           {{ end }}
 
-        </div> {{ "<!-- /.blog-main -->" | safeHTML }}
+        </div> {{ "<!--/.blog-main-->" | safeHTML }}
+        {{ if eq ($.Param "title")  "人机物融合的云计算与大数据新技术论坛" }}
+        {{ partial "meetinginf.html" . }}
+        {{ end }}
 
+        {{ if ne ($.Param "title")  "人机物融合的云计算与大数据新技术论坛" }}
         {{ partial "sidebar.html" . }}
+        {{ end }}
 
       </div> {{ "<!-- /.row -->" | safeHTML }}
     </div> {{ "<!-- /.container -->" | safeHTML }}
+
+    {{ if eq ($.Param "title")  "人机物融合的云计算与大数据新技术论坛" }}
+    {{ partial "meeting.html" . }}
+    {{ end }}
+
     {{ end }}
 
     {{ block "footer" . }}

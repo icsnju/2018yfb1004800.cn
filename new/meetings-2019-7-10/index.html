@@ -122,18 +122,38 @@
         <div class="divider"></div>
         
         <section class="section content has-text-justified">
-          <p>2019年7月7-9日，国际分布式计算领域的顶级会议IEEE International Conference on Distributed Computing Systems (ICDCS 2019)在美国召开。项目负责人黄罡教授作为第一作者，博士生罗超然作为第二作者发表长文“Software-Defined Infrastructure for Decentralized Data Lifecycle Governance: Principled Design and Open Challenges”，并在大会上做汇报。本文发表于ICDCS的Special Track: VISION/BLUE SKY THINKING，该Track旨在为分布式系统的发展提出一些具有展望性的观点，黄罡老师作为受邀学者撰写了此篇文章。</p>
+          <p>&#8194;&#8194;&#8194;&#8194;
+2019年7月7-9日，国际分布式计算领域的顶级会议IEEE International Conference on Distributed Computing Systems (ICDCS 2019)在美国召开。项目负责人黄罡教授作为第一作者，博士生罗超然作为第二作者发表长文“Software-Defined Infrastructure for Decentralized Data Lifecycle Governance: Principled Design and Open Challenges”，并在大会上做汇报。本文发表于ICDCS的Special Track: VISION/BLUE SKY THINKING，该Track旨在为分布式系统的发展提出一些具有展望性的观点，黄罡老师作为受邀学者撰写了此篇文章。</p>
 
-<p>本文针对当前大数据环境下的数据治理问题提出了一个新的解决方案——软件定义的基础设施。同时也给出了该方案的原理设计及一些开放性挑战。</br>
+<p>&#8194;&#8194;&#8194;&#8194;
+本文针对当前大数据环境下的数据治理问题提出了一个新的解决方案——软件定义的基础设施。同时也给出了该方案的原理设计及一些开放性挑战。</br>
+&#8194;&#8194;&#8194;&#8194;
 随着互联网和移动设备的发展，越来越多的数据在终端被用户产生。但由于传统的云计算以及软件架构，大部分产生于终端的数据被APP开发商上传至云端并封锁在APP内部，数据的流通完全被开发商所控制，个人数据存在被滥用和泄露的风险。于此同时，APP市场的“马太效应”会导致很多APP的活跃度会逐渐降低。然而，用户仍有很多有价值的数据保存于这些“长尾”APP中。但由于缺乏有效的维护和管理，这些APP逐渐会变成一个个数据孤岛，其中有价值的数据也很难被有效利用。</br>
+&#8194;&#8194;&#8194;&#8194;
 为此，本文提出了一种软件定义的基础设施，用来解决当前数据生命周期治理的种种难题。</br>
+&#8194;&#8194;&#8194;&#8194;
 本文中提出的软件定义的基础架构共分为五层：DaaS层，数据对象层，分析层，账本层以及存储层。如下图所示：</br>
-<img src="http://cdn.njuics.cn/img/2018yfb1004800.cn/2019-7-10/report.png" alt="avatar" />
+ <center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="http://cdn.njuics.cn/img/2018yfb1004800.cn/2019-7-10/report.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;"></div>
+</center>
+&#8194;&#8194;&#8194;&#8194;
 首先，Data-as-a-Service (DaaS) 层作为基础设施的最底层，解决的是如何有效的将存在于原始APP中的数据提取出来的问题，即数据开放问题。</br>
+&#8194;&#8194;&#8194;&#8194;
 解决数据开放问题后，还需要解决不同来源数据的异构性问题。在数据对象层，我们需要对数据进行定义、标识和描述。使数据的使用者可以以一种通用的方法访问来自于不同APP中的数据。</br>
+&#8194;&#8194;&#8194;&#8194;
 对于一些敏感数据，用户不希望原始数据被直接访问的情况下，我们会在分析层提供多种分析算法在不泄露任何原始数据的情况下满足数据需方的需求。分析算法运行在数据源端，仅返回分析结果，原始数据仍留存于用户本地。</br>
+&#8194;&#8194;&#8194;&#8194;
 存储层由一系列的数据仓库组成。在数据仓库中，我们会记录开放并经过定义、标识的数据对象的元信息，并以事件驱动的方式提供统一的检索、访问、注册、授权、修改等接口供数据所有者或数据需求方使用。</br>
+&#8194;&#8194;&#8194;&#8194;
 在账本层，我们借助于当前的分布式账本技术将所有的数据访问请求不可篡改的记录在分布式账本中，使数据变成一项资产，并拥有使用价值。然而，在数据交易的场景下分布式账本技术所面临的挑战完全不同于传统区块链的数字货币交易所面临的问题。对此，我们需要新的分布式账本技术解决数据交易场景下的价值记录问题。</br>
+&#8194;&#8194;&#8194;&#8194;
 不同于传统的中心化的数据管理方式，本文提出的软件定义的基础设施以去中心化的方式治理数据。将数据的所有权、处置权完全交由用户自己，并将数据流通中产生的价值完完全全的反馈给数据所有者。在未来，我们会在本文提出的概念的基础上实现一个数据治理系统的原型，打破“数据孤岛”，让数据可信的流通起来。</p>
         </section>
       </div>
@@ -148,7 +168,9 @@
   <div class="container">
     <div class="columns">
       <div class="column">
-        <img src="/footer.svg" alt="">
+        
+            
+            <img src="http://cdn.njuics.cn/img/2018yfb1004800.cn/title.png" width="150" >
         
       </div>
       
@@ -183,7 +205,7 @@
             <li>
               <a href="https://2018yfb1004800.cn" target="_blank">
                 <span class="icon"><i class="fa fa-linkedin"></i></span>
-                Linkedin
+                链接
               </a>
             </li>
             <li>

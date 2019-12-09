@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge"><title>人机物融合的云计算架构与平台</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.min.f4d8930701ac14f288dcb4efc7475f6ccd49ced8b270c4a433d0cd58b6eb8a93.css" integrity="sha256-9NiTBwGsFPKI3LTvx0dfbM1JztiycMSkM9DNWLbripM=">
+<link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.min.3a5d282f03108101d715e80fd4c07b55502ec4673fc063f2b6e415d4def5b354.css" integrity="sha256-Ol0oLwMQgQHXFegP1MB7VVAuxGc/wGPytuQV1N71s1Q=">
+<link rel="stylesheet" type="text/css" href="/css/icons.min.56faae60f16170cbfab5c036036aafb37d367aa4d4f4483b335bd98b891fa00b.css" integrity="sha256-VvquYPFhcMv6tcA2A2qvs302eqTU9Eg7M1vZi4kfoAs=">
+<link rel="stylesheet" type="text/css" href="/css/mycss.min.8dbf4fbe59ea8af9be1d67d084bc8698e032e05602f08b8fe84ca0d2d46c298d.css" integrity="sha256-jb9Pvlnqivm&#43;HWfQhLyGmOAy4FYC8IuP6Eyg0tRsKY0=">
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+
+      
+      
+      
+      <a class="navbar-item">
+        <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+        <div class="navbar-item left-menu-icon-wrapper">Tags</div>
+      </a>
+
+      <div class="navbar-item is-expanded"></div>
+      <a class="navbar-item is-hidden-desktop">  
+        <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">Menu</div>
+        <div data-target="navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+    </div>
+
+    
+
+    <div id="navbar-menu" class="navbar-menu is-static">
+      
+      <div class="navbar-end">
+        <a href="/about" class="navbar-item is-secondary">
+          About Me
+        </a><a href="https://2018yfb1004800.cn/new/" class="navbar-item is-secondary">News</a></div>
+    </div>
+
+
+
+
+  </div>
+</nav><nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+      <div class="navbar-brand">
+  
+        
+        
+        
+        <a class="navbar-item">
+          <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+          <div class="navbar-item left-menu-icon-wrapper">Tags</div>
+        </a>
+  
+        <div class="navbar-item is-expanded"></div>
+        <a class="navbar-item is-hidden-desktop">  
+          <div data-target="cloned-navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">Menu</div>
+          <div data-target="cloned-navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div>
+  
+      
+  
+      <div id="cloned-navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-end">
+          <a href="/about" class="navbar-item is-secondary">
+            About Me
+          </a><a href="https://2018yfb1004800.cn/new/" class="navbar-item is-secondary">News</a></div>
+      </div>
+  
+  
+  
+  
+    </div>
+  </nav>
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title">国家重点研发计划“人机物融合的云计算架构与平台”项目通过中期检查</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+        
+        <section class="section content has-text-justified">
+          <p>&#8194;&#8194;&#8194;&#8194;
+国家重点研发计划 “人机物融合的云计算架构与平台”项目中期检查会议于2019年11月30日至12月1日在北京召开。专项总体专家组专家、项目咨询专家组专家、高技术中心“云计算和大数据”重点专项管理办公室（以下简称“专项办”）以及项目17家参与单位骨干等有关人员共计90余人参加了会议。</br>
+&#8194;&#8194;&#8194;&#8194;
+该项目以面向人机物融合的新型云计算架构为切入点，将硬件资源的软件定义机制在纵向上扩展到数据和服务资源、在横向上从云中心延伸到网络和终端，提出一种面向人机物融合的软件定义基础理论，建立一套人机物融合云计算技术体系，研制一个支撑平台及一组示范应用，解决云网端软硬件及数据和服务资源多维可编程、云网端软硬件及数据和服务资源动态可协同、人机物自然特征与云网端资源按需融合等重大科学问题与技术挑战。</br>
+&#8194;&#8194;&#8194;&#8194;
+在课题中期检查会议上，项目牵头单位北京大学科研部副部长蔡一茂在致辞中介绍了项目意义，并对专家的辛勤工作表示感谢。之后，课题一负责人北京大学黄罡教授，课题二负责人清华大学王继良副教授，课题三负责人复旦大学彭鑫教授，课题四负责人中科院深先院王洋研究员，课题五负责人南京大学曹春教授分别就各自课题中期的阶段性进展和成果进行了汇报。专家组分别就各个课题的进展和成果进行了检查，经讨论认定，项目各课题进度符合任务书要求，总体完成了预定任务，达到了预期目标，并就课题实施过程中的技术线路提出了建设性意见。</br>
+&#8194;&#8194;&#8194;&#8194;
+在项目中期检查会议上，专项办领导徐泓就项目中期检查流程和要求进行了介绍，并特别强调了科研诚信建设的重要性和具体要求。北京大学科研部部长张宁在致辞中表示学校对该项目高度重视，并全力做好管理与支撑工作。信息科学技术学院副院长谢冰在致辞中对莅临专家表示感谢。随后，项目负责人北京大学黄罡教授就项目的科学问题、重要进展、指标完成情况以及未来计划进行汇报，南京大学曹春教授就项目的系统原型进行了汇报并现场进行技术演示。截止中期，项目在国内外核心会议期刊发表了数十篇高水平论文，获得了多个最佳论文奖，与图灵奖得主Robert Kahn博士团队建立了合作，同时还在神州数码等单位开展了应用示范。项目整体进展顺利，成果显著，得到了国内外学术界和产业界的认可。科技部领导和检查专家对项目的技术研究、平台研制、应用示范、组织管理、人才培养等各个方面均给出了很高的评价。最终，经评审讨论后，专家组成员一致认为项目阶段性成果丰硕，完成了项目中期考核要求。</br>
+&#8194;&#8194;&#8194;&#8194;
+人机物融合是信息化发展的重要趋势，将给产业结构和社会生活带来巨大变革。因此，开展面向人机物融合的云计算架构和平台研究，是我国在新一轮科技革命竞争中占领先机的重要抓手。项目组将认真总结专家意见，在后半期工作中协力合作，争取取得更优异的科研成果，圆满完成项目目标。
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="http://cdn.njuics.cn/2018yfb1004800.cn/middlecheck.png"
+    width="800" height="526">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;"></div>
+</center></p>
+
+        </section>
+      </div>
+    </div>
+  </div>  
+  <div class="container">
+    <div class="columns">
+      <div class="column has-text-right is-family-monospace is-centered-tablet-portrait">
+        Last modified:7 December 2019</div>
+    </div>
+  </div></section><footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        
+            
+            <img src="http://cdn.njuics.cn/img/2018yfb1004800.cn/title.png" width="150" >
+        
+      </div>
+      
+    <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>项目网站</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+                <a href="/credits">
+                  <span class="icon"><i class="fa fa-cube"></i></span>
+                  Credits
+                </a>
+              </li>
+            <li>
+              <a href="/tags">
+                <span class="icon"><i class="fa fa-tag"></i></span> 
+                All Tags
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      
+
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>版权所有</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                人机物融合的云计算架构与平台项目组
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+    <div id="backtotop"><a href="#"></a></div><div class="sidebar">
+  <div class="sidebar-header"><img src="/sidebar.svg" alt="">
+    
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="no-children">
+          <a href="/tags">
+            <div class="columns">
+              <table width="100%">  
+                <tr>
+                  <td class="">
+                    <span class="icon"><i class="fa fa-cubes"></i></span>All Tags
+                  </td>
+                  <td class="has-text-right" >
+                      
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </a></ul>
+  </div>
+</div>
+
+
+<script src="/js/jquery-2.2.4.js"></script>
+<script src="/js/feather.4.22.0.js"></script>
+<script src="/js/modernizr-2.8.3.js"></script>
+<script src="/js/fresh_new.js"></script>
+<script src="/js/highlight.9.15.8.pack.js"></script>
+<script src="/js/highlightjs-line-numbers.2.7.0.min.js"></script><script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad();</script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.codeinline').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
+</script></body>
+</html>
